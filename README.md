@@ -26,7 +26,7 @@ require 'Gemfile'
 # Good
 
 ```ruby
-instance_eval(File.read('wrapped/Gemfile'))
+instance_eval(File.read(File.expand_path('../wrapped/Gemfile', __FILE__)))
 
 gem 'rack-mini-profiler'
 gem 'bullet'
